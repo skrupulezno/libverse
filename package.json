@@ -1,6 +1,12 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "start": "lerna run start",
+    "test": "lerna run test",
+    "new-verison": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff"
+  },
   "workspaces": [
     "packages/*"
   ],
@@ -9,4 +15,3 @@
     "lerna": "^8.1.7"
   }
 }
-
